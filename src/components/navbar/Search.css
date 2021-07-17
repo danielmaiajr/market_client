@@ -1,0 +1,49 @@
+.search-form{
+  width: 30%;
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width:1050px) {
+  .search-form{
+    width: 100%;
+  }
+}
+.search-result{
+  color : #555;
+  display: none;
+  position: absolute;
+  width: 400px;
+  max-width: 100%;
+  z-index: 2;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.search-result.open{
+  display: block;
+}
+      
+.search-background{
+  display: none;
+}
+
+.search-background.open{
+  
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 53, 53, 0.4);
+}
+
+.search-button{
+  color: black;
+  position: absolute;
+  top: 17px;
+  right: 5px;
+}
